@@ -13,7 +13,8 @@ hist(
   ylab = "Frequency", 
   main = "Frequency Distribution of Stress Levels between Doctors and Engineers",
   col = "lightblue", 
-  xlim = c(2, 9), 
+  xlim = c(0, 10), 
   ylim = c(0, 50)
 )
+
 
