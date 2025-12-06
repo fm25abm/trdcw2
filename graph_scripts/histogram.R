@@ -9,8 +9,8 @@ new_df <- subset(
 hist(
   new_df$stress_level, 
   breaks = seq(3,8, by = 1),
-  xlab = "Stress Levels",
-  ylab = "Frequency", 
+  xlab = "Stress Level",
+  ylab = "Frequency of Individuals", 
   main = "Frequency Distribution of Stress Levels between Doctors and Engineers",
   col = "lightblue", 
   xlim = c(0, 10), 
