@@ -9,8 +9,16 @@ new_df <- subset(
 boxplot(
   stress_level~Occupation, 
   data = new_df, 
-  main = "Stress Levels between doctors and engineers",
+  main = "Stress Levels between Doctors and Engineers",
   xlab = "Occupation", 
   ylab = "Stress Levels",
   col = c("lightblue", "lightgreen")
+)
+legend("topright",
+       legend = c("Doctors' Stress Levels (Age: 27-59)", "Engineers' Stress Levels (Age:27-59)"),
+       fill = c("lightblue", "lightgreen"),
+       bty = "o",
+       bg = "white",
+       box.col = "black",
+       cex = 0.8
 )
