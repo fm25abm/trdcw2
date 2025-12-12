@@ -1,3 +1,6 @@
+library(readr)
+Sleep_health_and_lifestyle_dataset <- read_csv("dataset/Sleep_health_and_lifestyle_dataset.csv")
+View(Sleep_health_and_lifestyle_dataset)
 cw2 <- Sleep_health_and_lifestyle_dataset
 
 data_hist <- cw2[cw2$Occupation %in% c("Engineer", "Doctor"), ]
@@ -6,7 +9,7 @@ breaks_seq <- seq(1, 10, by = 1)
 hist(
   data_hist$`Stress Level`,
   breaks = breaks_seq,
-  main = "Stress Level (Engineers and Doctors)",
+  main = "Normal Distribution of Stress Levels",
   xlab = "Stress Level",
   ylab = "Frequency",
   col = "lightgreen",
